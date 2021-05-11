@@ -190,6 +190,103 @@ div#itmdVideo{
   
 }
 
+/*google maps css*/
+#map { 
+  height: 250px;
+  width: 86%;
+  border: 5px solid #AC5B09;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Contact form CSS*/
+#contact-form {
+  padding: 20px;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows:auto;
+  grid-column-gap:20px;
+  margin: 2% auto;
+  width: 96%;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px;
+}
+.contact-team{
+  grid-column-start:1;
+  grid-column-end:3;
+}
+.left {
+  text-align: center;
+  box-sizing: border-box;
+  grid-column-end:2;
+  border: 5px solid #AC5B09;
+}
+.right{
+  grid-column-end:3;
+  grid-row-start:2;
+  grid-row-end:3;
+}
+
+.right_image img{
+  display: none;
+  max-width:83%;
+}
+.contact-team > h1 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 20px;
+}
+/*input CSS*/
+input[type="text"] {
+  font-family: inherit;
+	display: block;
+  text-align:center;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  margin-left: 4.00em;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAAAAA;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #BA27C4;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+  font-family: inherit;
+  margin-right: auto;
+  width: 120px;
+  height: 40px;
+  background: #1F3798;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+input[type="submit"]:hover, input[type="submit"]:focus  {
+    opacity: 0.8;
+    background-color: #8292D2;
+    box-shadow: 0 2px 4px;
+    transition: 0.1s ease;
+}
+
 /*Larger Phones, Side View on Phones, and Small Tablet Screen Size*/
 
 @media screen and (min-width: 480px) {
@@ -213,6 +310,9 @@ div#itmdVideo{
     text-align: left;
     font-size: 1.125em;
   }
+  #contact-form {
+    width: 100%;
+  }
 }
 
 /*Tablets, Small laptops*/
@@ -233,7 +333,9 @@ div#itmdVideo{
     padding-top: 35px;
     padding-bottom: 35px;
   }
-
+  #contact-form {
+    width: 80%;
+  }
 }
 
 /*Desktops, Large Monitors*/
@@ -284,5 +386,11 @@ div#itmdVideo{
     margin-right: auto;
     margin-left: auto;
     max-width: 72.444em;
+  }
+  #map {
+    max-width: 72.444em;
+  }
+  #contact-form {
+    max-width: 40.444em;
   }
 }
