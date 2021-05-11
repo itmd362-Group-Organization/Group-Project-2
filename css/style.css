@@ -3,32 +3,6 @@
   Yelitza Castro
   Mahmood Mehrjoo */
 
-  form {
-    margin: 0 0 5px 0;
-    width: 100%;
-  }
-  form > label,
-  legend {
-    width: 100%;
-    float: none;
-  }
-  
-  label {
-    width: 100%;
-    text-align: center;
-  }
-  
-  form > fieldset {
-    width: 80%;
-    float: none;
-  }
-  
-  input[type=email],
-  input[type=text],
-  input[type=date] {
-    width: 95%;
-  }
-
 /*navbarbarigation Bar Styling*/
   .navb{
     width: 100%;
@@ -138,7 +112,7 @@ footer p {
   padding-top: 10px;
    padding-bottom: 10px;
 }
-  
+  /*google map CSS*/
 #map { 
   height: 250px;
   width: 86%;
@@ -149,6 +123,8 @@ footer p {
   margin-right: auto;
    margin-left: auto;
 }
+
+/*contact form CSS*/
 #contact-form {
   padding: 20px;
   display:grid;
@@ -166,20 +142,23 @@ footer p {
   grid-column-start:1;
   grid-column-end:3;
 }
+
 .left {
   text-align: center;
   box-sizing: border-box;
   grid-column-end:2;
   border: 5px solid #AC5B09;
 }
+
 .right{
   grid-column-end:3;
   grid-row-start:2;
   grid-row-end:3;
     
 }
+/*contact image CSS*/
 .right_image img{
-  display: none;
+  display: block;
   max-width:83%;
 }
   
