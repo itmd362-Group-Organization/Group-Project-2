@@ -269,7 +269,17 @@ div#itmdVideo{
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
+/* input container covers text field where user is asked to input question or long message*/
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}	
+	
+	
+	
+	
   #itmd {
     margin-right: auto;
     margin-left: auto;
