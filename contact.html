@@ -29,11 +29,30 @@
     </header>
 
  <main>
-    <form id="contact-form" method="GET" action="#null" autocomplete="on" onsubmit="return validationEvent()">
-      <div class="contact-team">
-        <h1>Feel free to fillout the form below and we will contact you as soon as possible!</h1>
-      </div>
-     
+ <form id="contact-form" method="GET" action="#null" autocomplete="on" onsubmit="return validationEvent()">
+   <div class="contact-team">
+     <h1>Feel free to fillout the form below and we will contact you as soon as possible!</h1>
+   </div>
+   
+<div class="left">
+        <div>
+          <input type="text" name="name" id="name-input" value="" placeholder="Full Name" />
+        </div>
+        <div>
+          <input type="text" name="email" id="email-address" value="" pattern="^.+@.+$" placeholder="E-Mail" />
+        </div>
+        <div>
+          <input type="text" name="phone" id="phone-number" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="321-123-1230" />
+        </div>
+  
+<div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="text" placeholder="Question/Message" name="qormess">
+  </div>
+        <div>
+          <input type="submit" name="submit" value="Submit">
+        </div>
+</div>    
     
     
 </body>
