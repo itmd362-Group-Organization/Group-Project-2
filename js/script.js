@@ -19,6 +19,22 @@ function chicago() {
   setTimeout(chicago, 6000);
 }
 
+/* Validation JS */
+function validationEvent() {
+  var a = document.forms["contact-form"]["name-input"].value;
+  var b = document.forms["contact-form"]["email-address"].value;
+  var c = document.forms["contact-form"]["phone-number"].value;
+  var d = document.forms["contact-form"]["question"].value;
+  if ((a == "") || (b == "") || (c == "") || (d == "")){
+    alert("All of the sections must be filled out.");
+  }
+  else{
+    alert("Thank You!");
+    window.open("#");
+    return false; 
+  }
+}
+
 /* Google Map JS */
 var map;
 var marker;
